@@ -745,34 +745,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 60px 0 40px 0;
 }
 
-#services .box {
-  margin-bottom: 30px;
-}
-
-#services .icon {
-  float: left;
-}
-
-#services .icon i {
-  color: #efa700;
-  font-size: 36px;
-  line-height: 1;
-  transition: 0.5s;
-}
-
-#services .title {
-  margin-left: 60px;
+#services .services-col h2 {
+  color: #000;
+  text-align: center;
   font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 20px;
+  padding: 0;
+  margin: 40px 0 12px 0;
 }
 
-#services .title a {
-  color: #111;
-}
 
-#services .box:hover .title a {
-  color: #efa700;
+#services .services-col p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333;
+  margin-bottom: 0;
+  padding: 0 20px 20px 20px;
 }
 
 #services .description {
@@ -782,11 +770,123 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
 }
 
+#services .services-col h2 a {
+  color: #000;
+}
+
+#services .services-col h2 a:hover {
+  color: #efa700;
+}
+
+
+/* Services Section
+--------------------------------*/
+
+#circuit {
+  background: #fff;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+}
+
+#circuit .circuit-col h2 {
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0;
+  margin: 40px 0 12px 0;
+}
+
+
+#circuit .circuit-col p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333;
+  margin-bottom: 0;
+  padding: 0 20px 20px 20px;
+}
+
+#circuit .description {
+  font-size: 14px;
+  margin-left: 60px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+#circuit .circuit-col h2 a {
+  color: #000;
+}
+
+#circuit .circuit-col h2 a:hover {
+  color: #efa700;
+}
+
+
+
+
+
+
+
+
+
+#trekkings {
+  background-size: cover;
+  padding: 60px 0 40px 0;
+}
+
+#trekkings .trekkings-col h2 {
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0;
+  margin: 40px 0 12px 0;
+}
+
+
+#trekkings .trekkings-col p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333;
+  margin-bottom: 0;
+  padding: 0 20px 20px 20px;
+}
+
+#trekkings .description {
+  font-size: 14px;
+  margin-left: 60px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+#trekkings .trekkings-col h2 a {
+  color: #000;
+}
+
+#trekkings .trekkings-col h2 a:hover {
+  color: #efa700;
+}
+
+
+
+
+
+
+
+
+/* Call To Action Section
+--------------------------------*/
+
+
+
 /* Call To Action Section
 --------------------------------*/
 
 #call-to-action {
-  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/call-to-action-bg.jpg) fixed center center;
+/*  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/call-to-action-bg1.jpg) fixed center center;
+*/
+background-image: url(../img/intro-carousel/6.jpg);
+background-attachment: fixed;  
   background-size: cover;
   padding: 60px 0;
 }
@@ -1355,8 +1455,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #footer {
-  background: #000;
-  padding: 0 0 30px 0;
+
   color: #eee;
   font-size: 14px;
 }
