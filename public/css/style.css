@@ -1679,3 +1679,10 @@ background-attachment: fixed;
     display: inline;
   }
 }
+
+.activite-box {
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}

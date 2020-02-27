@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('index',['colorHeader' => 'notblack']);
 });
+
+Route::get('activitee', function () {return view('activite',['colorHeader' => 'black']);});
+Route::get('details', function () {return view('details',['colorHeader' => 'black']);});
+

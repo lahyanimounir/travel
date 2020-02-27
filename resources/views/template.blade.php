@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>BizPage Bootstrap Template</title>
+  <title>Luxury Des Tours</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
+  <link href="img/favicon0.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -40,7 +40,7 @@
   <!--==========================
     Header
   ============================-->
-  <header id="header">
+  <header id="header" @if($colorHeader == 'black') style="background: rgba(0, 0, 0, 0.9);padding: 20px 0;height: 72px;" @endif>
     <div class="container-fluid">
 
       <div id="logo" class="pull-left d-none d-lg-block">
@@ -51,18 +51,18 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu" >
-          <li class="menu-active"><a href="#intro">Acceuil</a></li>
-          <li class="menu-has-children"><a href="#services">Excursion</a>
+          <li class="menu-active"><a href="/#intro">Acceuil</a></li>
+          <li class="menu-has-children"><a href="/#services">Excursion</a>
              <ul style="border-radius: 5px" class="px-0 py-0">
-              <li><a href="#">Marrakech</a></li>
-              <li><a href="#">Zagoura</a></li>
-              <li><a href="#">Ouarzazate</a></li>
+              <li><a href="/activitee">Marrakech</a></li>
+              <li><a href="/activitee">Zagoura</a></li>
+              <li><a href="/activitee">Ouarzazate</a></li>
             </ul>
           </li>
-          <li><a href="#circuit">Circuit</a></li>
-          <li><a href="#trekkings">Trekkings</a></li>
-          <li><a href="#portfolio">Galerie</a></li>
-          <li><a href="#contact">Contacte</a></li>
+          <li><a href="/#circuit">Circuit</a></li>
+          <li><a href="/#trekkings">Trekkings</a></li>
+          <li><a href="/#portfolio">Galerie</a></li>
+          <li><a href="/#contact">Contacte</a></li>
           <li class="menu-has-children"><a href="">Langues</a>
             <ul style="border-radius: 5px">
               <li><a href="#">Français</a></li>
@@ -75,68 +75,6 @@
     </div>
   </header><!-- #header -->
 
-  <!--==========================
-    Intro Section
-  ============================-->
-  <section id="intro">
-    <div class="intro-container">
-      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
-
-        <ol class="carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
-
-          <div class="carousel-item active">
-            <div class="carousel-background"><img src="img/intro-carousel/8.jpg" alt=""></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2>Ouarzazate Excursion </h2>
-                <p>Profitez d’une expédition de 3 jours à Ouarzazate lors de cette excursion qui vous permettra de découvrir les plus beaux sites du sud du Maroc. L’une des plus belles activités à faire aux alentours de Ouarzazate !</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Réserver Maintenant</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="carousel-background"><img src="img/intro-carousel/7.jpg" alt=""></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2>Excursion dans le massif de l'Atlas</h2>
-                <p>Lors de cette excursion d’une journée au massif de l’Atlas et aux villages berbères, vous verrez les endroits les plus étonnants et magnifiques : Le massif de l’Atlas, la vallée d’Imlil, la vallée d’Asni, la vallée d’Amizmiz, promenez-vous et visitez environ 8 villages berbères...
-                </p>
-                <a href="#featured-services" class="btn-get-started scrollto">Réserver Maintenant</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item ">
-            <div class="carousel-background"><img src="img/intro-carousel/6.jpg" alt=""></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2>Les gorges du Todra</h2>
-                <p>Réservez une excursion privée d'une journée sur l'ancienne route des 1000 casbahs. Explorez la vallée du Dadès et les canyons du Todra. Promenez-vous dans une palmeraie, savourez un déjeuner local et admirez des vues spectaculaires sur le paysage…</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Réserver Maintenant</a>
-              </div>
-            </div>
-          </div>
-
-       
-
-        </div>
-
-        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-
-        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-
-      </div>
-    </div>
-  </section><!-- #intro -->
 
 
 @yield('contenu')
