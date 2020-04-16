@@ -8,6 +8,11 @@ class Lang extends Model
 {
       public function activite_detail()
     {
-    	return $this->belongsTo(Activite_detail::class);
+    	return $this->hasMany(Activite_detail::class);
+    }
+
+    public function activite_day()
+    {
+    	return $this->hasMany(Activity_day::class);
     }
 }

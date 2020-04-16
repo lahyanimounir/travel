@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Activite_detail extends Model
 {
-    public function langs()
+    public function lang()
     {
-    	return $this->hasMany(Lang::class);
+    	return $this->belongsTo(Lang::class);
     }
       public function activite()
     {

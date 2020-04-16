@@ -21,9 +21,18 @@ class Activite extends Model
     	return $this->hasMany(Media::class);
     }
 
+    public function activity_day()
+    {
+        return $this->hasMany(Activity_day::class);
+    }
 
     public function ville()
     {
     	return $this->belongsTo(Ville::class);
+    }
+
+    public function types()
+    {
+        return $this->belongsTo(Type::class);
     }
 }
