@@ -29,7 +29,7 @@
                
                 @foreach ($activities[0]->medias as $img)
                 <div class="carousel-item @if($loop->first) active @endif " style="height: 550px">
-                  <img class="d-block w-100 h-100" src="http://127.0.0.1:8001/images/{{$img->url}}" alt="First slide">
+                  <img class="d-block w-100 h-100" src="http://admin.sunrise-pro.com/public/images/{{$img->url}}" alt="First slide">
                 </div>
                 @endforeach              
             
@@ -95,6 +95,7 @@
           </div>
         </div>
 
+     <!-- 
         <div class="row align-items-center" style="border-bottom: 1px solid #ddd;height:50px;font-size: 13px; ">
           <div class="col-md-3" style="font-weight: bold;">
             HEURE DE SORTIE 
@@ -103,15 +104,14 @@
             {{$activities[0]->heur_depart}}
           </div>
         </div>
-
-        <div class="row align-items-center" style="border-bottom: 1px solid #ddd;height:50px;font-size: 13px; ">
+   <div class="row align-items-center" style="border-bottom: 1px solid #ddd;height:50px;font-size: 13px; ">
           <div class="col-md-3" style="font-weight: bold;">
             HEURE DE RETOUR
           </div>
           <div class="col-md-9">
             {{$activities[0]->heur_arriver}}
           </div>
-        </div>
+        </div>-->
 
         <div class="row align-items-center" style="border-bottom: 1px solid #ddd;height:50px;font-size: 13px; ">
           <div class="col-md-3" style="font-weight: bold;">
@@ -120,7 +120,7 @@
           <div class="col-md-9">
             {{$activities[0]->duree}}
           </div>
-        </div>
+        </div> 
 
         <div class="row align-items-center" style="font-size: 13px;;border-bottom: 1px solid #ddd;height:50px; ">
           <div class="col-md-3" style="font-weight: bold;">

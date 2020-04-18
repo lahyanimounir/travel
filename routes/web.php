@@ -11,7 +11,10 @@
 |
 */
 
-Route::redirect('/','/en');
+
+
+
+Route::redirect('/','/public/en');
 
 Route::group(['prefix' => '{language}'], function (){
 	Route::get('/',['uses'=>'ajaxController@index']);

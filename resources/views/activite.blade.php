@@ -14,15 +14,15 @@
 
         <div class="row services-cols">
 
-
+          
         @foreach ($listActivities as $listActivitie)
 
           <div class="col-md-4 wow">
             <div class="services-col activite-box">
               <div class="img">
-                <img src="http://127.0.0.1:8081/images/{{$listActivitie->medias[0]->url}}" alt="" style="height: 200px;width: 100%;" class="img-fluid">
+                <img src="http://admin.sunrise-pro.com/public/images/{{$listActivitie->medias[0]->url}}" alt="" style="height: 200px;width: 100%;" class="img-fluid">
               </div>
-              <h2 class="title"><a href="/{{app()->getLocale()}}/details/{{$listActivitie->id}}">{{$listActivitie->activite_details[0]->title}} </a></h2>
+              <h2 class="title"><a href="/public/{{app()->getLocale()}}/details/{{$listActivitie->id}}">{{$listActivitie->activite_details[0]->title}} </a></h2>
               <p>
                 {{$listActivitie->activite_details[0]->description}}
               </p>

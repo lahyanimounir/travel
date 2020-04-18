@@ -8,7 +8,7 @@ use App\Lang;
 use App\Ville;
 use App\Activite_detail;
 use App\Activity_day;
-use App\media;
+use App\Media;
 class ajaxController extends Controller
 {
    
@@ -19,6 +19,7 @@ class ajaxController extends Controller
      */
     public function index()
     {
+
     	$activities = Activite::all();
     	$activitiesMenu = Activite::distinct()->get(['ville_id','types_id']);
 
@@ -30,9 +31,13 @@ class ajaxController extends Controller
 
     public function activites(Request $request,$lang,$ville_id,$type_id)
     {	
+
     	$listActivities = Activite::where('ville_id',$ville_id)->where('types_id',$type_id)->get();
+
     	$activities = Activite::all();
+
     	$activitiesMenu = Activite::distinct()->get(['ville_id','types_id']);
+  
     	$langues = Lang::all();
     	$villes = Ville::all();
     	$tables=['colorHeader' => 'black','activities' => $activities,'langues'=>$langues,'villes'=>$villes,'activitiesMenu' => $activitiesMenu,'listActivities' =>$listActivities];
@@ -45,12 +50,14 @@ class ajaxController extends Controller
     	$activities = Activite::where('id',$id)->get();
     	
     	$activities_details = Activite_detail::where('activite_id',$id)->where('lang_id',$lang[0]->id)->first();
-      
+        
     	$activities_days = Activity_day::where('activite_id',$id)->where('lang_id',$lang[0]->id)->get();
+
     	$activitiesMenu = Activite::distinct()->get(['ville_id','types_id']);
+
     	$langues = Lang::all();
     	$villes = Ville::all();
-    	$medias = media::where('activite_id',$id);
+    	$medias = Media::where('activite_id',$id);
 
     	$tables=['colorHeader' => 'black','activities' => $activities,'activities_details'=>$activities_details,
         'activities_days'=>$activities_days,'langues'=>$langues,'villes'=>$villes,'activitiesMenu' => $activitiesMenu];
