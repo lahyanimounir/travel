@@ -74,9 +74,9 @@
             </ul>
           </li>
           <li><a href="/#trekkings">Trekkings</a></li>
-          <li><a href="/#portfolio">Galerie</a></li>
-          <li><a href="/#contact">Contacte</a></li>
-          <li class="menu-has-children"><a href="">Langues</a>
+          <li><a href="/#portfolio">{{ __('translate.galerie')}}</a></li>
+          <li><a href="/#contact">{{ __('translate.contacte')}}</a></li>
+          <li class="menu-has-children"><a href="">{{ __('translate.langues')}}</a>
             <ul style="border-radius: 5px">
               @foreach ($langues as $langue)
                  <li><a href="/{{$langue->code}}">{{$langue->name}}</a></li>
@@ -102,27 +102,27 @@
 
           <div class="col-lg-4 col-md-6 footer-info">
             <h3>Luxury Tours</h3>
-            <p>Nous avons sélectionné les meilleures destinations marocaines, pour rendre votre voyage spécial et inoubliable. excursions d'une journée, excursions, circuits dans le désert et circuits entièrement personnalisés .</p>
+            <p>{{ __('translate.Nous avons sélectionné les meilleures destinations marocaines, pour rendre votre voyage spécial et inoubliable. excursions dune journée, excursions, circuits dans le désert et circuits entièrement personnalisés ')}}.</p>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-links">
-            <h4>LIENS UTILES</h4>
+            <h4>{{ __('translate.LIENS UTILES')}}</h4>
             <ul>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Acceuil</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">POURQUOI NOUS</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">NOS EXCURSSION</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">NOS CIRCUITS</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">NOS GALERIE</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">{{ __('translate.ACCEUIL')}}</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">{{ __('translate.POURQUOI NOUS')}}</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">{{ __('translate.NOS EXCURSION')}}</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">{{ __('translate.NOS CIRCUITS')}}</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">{{ __('translate.NOS GALERIE')}}</a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-contact">
-            <h4>Contactez nous</h4>
+            <h4>{{ __('translate.Contactez nous')}}</h4>
             <p>
               Hay Elmassira <br>
               N° 192, Ouarzazate<br>
               Maroc <br>
-              <strong>Téléphone:</strong> +33 6 64 13 63 96<br>
+              <strong>{{ __('translate.Téléphone')}}:</strong> +33 6 64 13 63 96<br>
               <strong>Email:</strong> Email@example.com<br>
             </p>
 
