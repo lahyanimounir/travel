@@ -7,9 +7,8 @@
       <div class="container">
 
         <header class="section-header">
-          <h3>Nos Excurssion</h3>
-          <p>En vous donnes le meilleur service des Excursions et Circuits au Maroc à un prix le plus bas dans le marché des professionels de domaine, voyager avec nous ce n’est pas seulement visiter et profiter un endroit mais c’est plus que ça .
-          .</p>
+         <h3>{{ __('translate.Nos Excurssion')}}</h3>
+         <p>En vous donnes le meilleur service des Excursions et Circuits au Maroc à un prix le plus bas dans le marché des professionels de domaine, voyager avec nous ce n’est pas seulement visiter et profiter un endroit mais c’est plus que ça</p>
         </header>
 
         <div class="row services-cols">
